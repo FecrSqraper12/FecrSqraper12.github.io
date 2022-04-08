@@ -1,22 +1,78 @@
 <!DOCTYPE html>
 <html lang="tr">
     <head>
-        <link rel="stylesheet" href="styles.css">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Ana Sayfa | Sqraper12</title>
+
+        <!-- Favicon -->
+        <link rel="icon" type="image/x-icon" href="/images/favicon.ico">
+        <!-- Remix icons -->
+        <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet"> 
+        <!-- Swiper.js styles -->
+        <link rel="stylesheet" href="/css/swiper-bundle.min.css"/>
+        <!-- Custom styles -->
+        <link rel="stylesheet" href="/css/main.css">
     </head>
 
-    <body>
-        <header>
-            <nav>
-                <ul>
-                    <li>Ana Sayfa</li>
-                    <li></li>
-                    <li></li>
-                </ul>
+    <body>  
+        <header class="header" id="header">
+
+            <nav class="navbar container">
+
+                <a href="index.html">
+                    <h2 class="logo">Sqraper12</h2>
+                </a>
+
+                <div class="menu" id="menu">
+                    <ul class="list">
+                        <li class="list-item">
+                            <a href="#" class="list-link current">Ana Sayfa</a>
+                        </li>
+                        <li class="list-item">
+                            <a href="#" class="list-link">Yazılar</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="list list-right">
+                    <button class="btn place-items-center" id="search-icon">
+                        <i class="ri-search-line"></i>
+                    </button>
+
+                    <button class="btn place-items-center screen-lg-hidden menu-toggle-icon" id="menu-toggle-icon">
+                        <i class="ri-menu-3-line open-menu-icon"></i>
+                        <i class="ri-close-line close-menu-icon"></i>
+                    </button>
+                </div>
             </nav>
-            <h1>Ana Sayfa</h1>
+
         </header>
 
+        <div class="search-form-container container" id="search-form-container">
+
+            <div class="form-container-inner">
+
+                <form action="" class="form">
+                    <input type="text" class="form-input" placeholder="Ne aramıştınız?">
+                    <button class="btn form-btn" type="submit">
+                        <i class="ri-search-line"></i>
+                    </button>
+                </form>
+
+                <span class="form-note">or press ESC to close</span>
+            </div>
+
+            <button class="btn form-close-btn place-items-center" id="form-close-btn">
+                <i class="ri-close-line"></i>
+            </button>
+
+        </div>
+
+        <!-- Swiper.js -->
+        <script src="/js/swiper-bundle.min.js"></script>
+        <!-- Custom script -->
+        <script src="/js/main.js"></script>
     </body>
 </html> 
