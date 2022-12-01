@@ -87,6 +87,14 @@ i{
     display: none;
 }
 
+.d-grid{
+    display: grid;
+}
+
+.section{
+    padding-block: 5rem;
+}
+
 .header{
     background-color: var(--secondary-background-color);
     position: fixed;
@@ -225,4 +233,34 @@ i{
 .search-form-container.activated{
     opacity: 1;
     transform: scale(1);
+}
+
+.featured-articles{
+    padding-block: 2rem;
+}
+
+.section-header-offset{
+    margin-top: 7.4rem;
+}
+
+.featured-articles-container,
+.featured-content{
+    gap: var(--gap);
+}
+
+.headline-banner{
+    background-color: var(--secondary-background-color);
+    display: flex;
+    align-items: center;
+    gap: var(--gap);
+    font-size: var(--font-size-xsm);
+}
+
+.headline{
+    color: var(--light-color);
+    font-size: 1rem;
+    text-transform: uppercase;
+    text-align: center;
+    padding: .4rem;
+    height: 100%;
 }
